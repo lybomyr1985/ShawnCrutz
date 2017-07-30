@@ -1,0 +1,30 @@
+{
+  "name": "equalHeight.js",
+  "main": "jquery.equal-height.js",
+  "version": "3.0.0",
+  "homepage": "https://github.com/FlorianKoerner/equalHeight.js",
+  "authors": [
+    "Florian Körner <contact@florian-koerner.eu>"
+  ],
+  "description": "jQuery-Plugin for equal boxes heights",
+  "keywords": [
+    "equal",
+    "css",
+    "html",
+    "height",
+    "jquery",
+    "plugin",
+    "flexbox",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "typings",
+    "tsd.json"
+  ],
+  "dependencies": {
+      "jquery": ">=1.9"
+  }
+}

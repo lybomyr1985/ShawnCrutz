@@ -1,0 +1,585 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "media"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+
+
+
+html, body
+	height: 100%
+
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $default-font
+  overflow-x: hidden
+  opacity: 1
+  &.ishome
+    .site-header
+     background-blend-mode: darken
+     z-index: 12
+     background-color: rgba(0,0,0,.5)	
+	   height: 100vh
+ 	   color: #fff
+
+	    
+
+.h1, .h2, .h3, .h4, .h5, .h6
+  line-height: 1.4
+  text-transform: uppercase
+
+.text-center
+  text-align: center
+
+
+section, header 
+  position: relative 
+  background-size: cover
+  background-position: center
+
+
+.site-header
+	height: 500px
+   
+
+
+.button
+  display: inline-block
+  border: none
+  color: #fff
+  text-decoration: none
+  background-color:  #5ac8fb 
+  padding: 15px 45px
+  font-size: 13px
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 3px
+  border-radius: 2px
+  text-align: center
+  position: relative
+  outline: none
+  transition: background-color .1s ease
+  &::after
+    transition: background-color .2s ease
+    position: absolute
+    content: ''
+    height: 4px
+    bottom: 0
+    width: 100%
+    background-color: darken($accent, 50%)
+    opacity: .18
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+    left: 0
+  &:focus, &:hover
+    text-decoration: none
+    color: #fff
+  &:hover
+    background-color: lighten($accent, 5%)
+    &::after
+      opacity: .22
+  &:active
+    background-color: darken($accent, 5%)
+    &::after
+      opacity: .32 
+  &.button-white
+    background-color: #FFF
+    color: #444
+    &::after
+      background-color: rgba(#000, .6)
+    &:hover
+       &::after   
+          background-color: rgba(#000, .2)
+       &:active
+         &::after   
+             background-color: rgba(#000, .2)
+
+.top-line 
+  height: 70px
+  padding-top: 10px 
+
+ 
+.logo
+    color: #5ac8fb
+    width: 17px
+    height: 20px
+    top: 7px
+    left: 80px
+    position: relative
+
+.shawn 
+  font-family: opnensans
+  position: absolute
+  left: 136px
+  bottom:  -25px
+  font-size: 18.3px
+  color: #fff
+nav
+ position: relative
+ bottom: 5px 
+ .hed-nav
+   li
+    position: relative
+    text-decoration: none
+    display: inline
+    font-family: opensans
+    font-size: 12px
+    padding-left: 39px
+    bottom: -2px
+    color: #fff
+    &:hover 
+      color: #5ac8fb 
+
+           
+.hed-nav
+  width: 700px
+
+.nav-h
+ width: 700px
+
+
+.fa.fa-search
+  bottom: 10px     
+  position: absolute
+  left: 697px
+  bottom:  23px
+  color: #fff
+
+
+hr 
+ margin-top: 3px  
+ opacity: 0.5
+
+
+ .owl-carousel
+   height: 250px;
+   bottom: -10px
+
+
+.owl-stage-outer
+    
+
+
+.partners
+  .partner 
+     display: flex 
+     flex-direction: column
+     margin: auto
+.owl-stage
+   display: flex   
+   margin: 100px  
+.owl-nav
+    position: absolute    
+    top: 150px
+    width: 100%
+    z-index: 2
+    > div
+      position: absolute
+      top: -3px
+      color: #fff
+      font-size: 30px
+      padding: 0 10px
+      &.owl-prev
+        left: -30px 
+      &.owl-next
+        right: 31% 
+        transition: opacity .5s ease
+        &:hover
+          opacity:  .6
+  
+
+
+.gFree
+  position: relative
+  left: 166px
+  bottom: 36px
+  font-size: 14px
+  color: #fff
+
+.nine-f
+    font-family: opensans
+    font-size: 2.2em
+    color: #fff
+
+.fa.fa-bolt
+    position: relative
+    font-size: 1.5em
+    left: 291px
+    color: #fff
+
+ 
+.cont-f
+   display: flex
+   justify-content: center
+   flex-flow: row wrap
+   width: 100%
+   height: 300px
+   bottom: -68px
+   position: relative
+
+.p-mask, .p-fred, .p-joe, .p-joshua 
+      font-family: opensans
+      font-size: 12px
+      color: #515151 
+
+.h-mask, .h-fred, .h-joe, .h-joshua 
+      font-family: opensans
+      color: #515151 
+
+    
+.h-mask, .h-joshua
+  margin-left: 6%
+
+
+
+.h-fred, .h-joe
+  margin-left: 18%
+
+.fa.fa-bullhorn,  .fa.fa-bell ,.fa.fa-cogs, .fa.fa-envelope
+        color: #5ac8fb 
+        margin-left: 30%
+        font-size: 1.3em
+
+.mask, .fred, .joe, .joshua 
+  padding-left: 60px        
+
+.fj
+  display: flex
+  align-items: center
+  flex-flow:  wrap
+  flex-direction: column
+  margin-bottom: 5%
+  .iA, .diA 
+    font-family: opensans
+    color: #515151 
+
+.hamburger.hamburger--collapse
+    bottom: 53px
+    position: relative
+    left: 1360px
+    width: 60px
+    height: 40px
+    display: none
+
+.fooAl
+   display: flex
+   flex-wrap: wrap 
+   background-color: #5ac8fb 
+   .i1, .i2, .i3, .i4, .i5, .i6, .i7, .i8, .i9, .i10
+      display: flex 
+      flex-flow:  wrap
+      justify-content: center
+      &:hover 
+       opacity: 0.5
+       transition: 3s easy
+       
+      img 
+        width: 289px
+        height: 195px 
+        
+      .fa.fa-angle-double-down
+         color: #fff
+         position: absolute 
+         margin-top: 72px
+         opacity: 0
+         font-size: 1.7em
+    
+ 
+      .spi1 
+         color: #fff 
+         position: absolute 
+         margin-top: 102px
+         opacity: 0
+         font-family: opensans
+         transition: 3s easy
+
+           
+      &:hover .fa.fa-angle-double-down 
+
+        opacity: 1
+      &:hover  .spi1
+        opacity: 1
+      
+
+.s-1
+   margin-top: 3% 
+
+.s-2
+  max-height: 600px 
+  .comp 
+    display: flex
+    flex-flow:  wrap
+    justify-content: center
+    .dP 
+      font-family: opensans
+      color: #515151  
+      padding-top: 3%
+      .iwant
+         font-size: 0.7em
+      .i-vin
+        .fa.fa-angle-right
+          color: #5ac8fb 
+          padding-right: 8px
+          display: block
+          padding-bottom: 3%
+          &::before 
+               padding-right: 6px
+          .vig
+             color: #515151   
+             font-size: 0.7em   
+             font-family: opensans
+    .dF 
+      width: 465px
+      height: 335px
+      img
+        width: 100%   
+    .h4
+        font-family: opensans
+        color: #515151  
+        &::before 
+           content: '|' 
+           color: #5ac8fb 
+           font-size: 1.7em
+           padding-right: 8px
+
+ 
+.s-3 
+   background-size: cover 
+   .lFeel 
+      color: #515151  
+      display: flex
+      flex-flow:  wrap
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      font-family: opensans
+      margin-bottom: 10%;
+      .h41
+         position: relative
+         top: 41px  
+          
+      .conA 
+          font-size: 0.8em  
+          position: relative
+          bottom: -6px 
+   .baf 
+      display: flex
+      flex-flow:  wrap
+      justify-content: center   
+      position: relative
+      top: 22%  
+      .bic, .and, .fing, .fotoA  
+         position: relative
+         padding-left: 9% 
+         color: #fff
+         font-family: opensans
+         align-items: center
+         margin-bottom: 10%;
+         .bicI, .andI, .findI, .fotoI
+            height: 60px
+            width: 60px  
+            background-color:  #5ac8fb 
+            border-radius: 100px 100px 100px 100px
+         .fa.fa-bicycle, .fa.fa-android, .fa.fa-hand-peace-o, .fa.fa-camera 
+            left: 34%;
+            position: relative
+            top: 25%
+      .conBaf 
+            top: 18%
+            position: relative 
+            left: -7% 
+      .state 
+            position: relative    
+            top: 17%;
+            left: 7%;
+            font-size: 0.7em 
+      #o1 
+        position: relative
+        left: 20% 
+
+      
+.joo 
+  display: flex
+  justify-content: center
+  font-family: opensans
+  flex-flow: row wrap
+  .jon, .ourT, .ourS 
+     position: relative
+     margin-bottom: 5% 
+     padding-left: 7%
+     .h411 
+       color: #515151
+       &::before 
+           content: '|' 
+           color: #5ac8fb 
+           font-size: 1.7em
+           padding-right: 8px
+     .jonP
+        font-size: 0.7em      
+     .ttt
+       display: flex
+       flex-direction: column
+       .fa.fa-twitter 
+         color: #5ac8fb    
+         margin-top: -1px
+         &::before 
+            left: 11px;
+            position: relative
+         .tSpan 
+           position: relative           
+           color: #515151
+           font-family: opensans 
+           font-size: 0.7em 
+           line-height: 1.2em
+           left: 40px
+           top: -29px 
+       .fS, .hS,  .mS 
+           font-size: 0.7em  
+     .Matt, .Heerb, .Frank 
+        position: relative 
+        bottom: 8px 
+
+
+.s-5 
+  background-color: #f7f7f7
+  
+  
+.partners2
+  .partner2 
+       display: flex 
+       flex-direction: column
+       margin: auto
+       align-items: center
+       color: #515151 
+       font-family: opensans 
+       .outdoors 
+          font-family: opensans 
+          font-size: 1.2em  
+       .pOut    
+          font-family: opensans 
+          font-size: 0.6em 
+  .outImg
+     width: 80px
+     height: 80px
+     margin-top: 5%       
+  .Out
+    font-family: opensans   
+    font-size: 0.8em
+    position: relative;
+    left: -7%
+    margin-top: 5%
+    .yName 
+      font-family: opensans   
+      
+.owl-stage
+        display: flex   
+        margin: 100px  
+        
+.owl-carousel 
+   .owl-item 
+   img 
+      border-radius: 100px 100px 100px 100px    
+.owl-dots 
+  width: 100%
+  text-align: center
+  margin-top: -26px
+  position: relative
+  left: 12%
+  .owl-dot
+   width: 8px
+   height: 8px
+   background-color: #fff
+   border-radius: 10em
+   display: inline-block
+   margin: 4px
+   transition: background-color .5s ease, transform ease
+   &.active
+     background-color:  #5ac8fb  
+     transform: scale(1.4) 
+
+
+
+
+
+.parts3 
+   .part3
+       color: #515151 
+       display: flex 
+       flex-direction: column
+       margin: auto
+       align-items: center
+       position: relative
+       margin-right: 67px
+       right: 50px
+   .owl-nav  
+       color: #5ac8fb   
+       top: 116px
+       font-size: 0.5em
+       .owl-next
+          left: 105%
+          color: #5ac8fb   
+          font-size: 2.3em
+       .owl-prev 
+          color: #5ac8fb   
+          font-size: 2.3em 
+
+
+.joo2 
+  background-color: #333333
+  display: flex
+  flex-flow:  wrap
+  justify-content: center
+  font-family: opensans
+  .jon2, .ourT2, .ourS2 
+     position: relative
+     margin-bottom: 5% 
+     padding-left: 7%
+     font-family: opensans
+     .h4112
+       color: #515151
+       &::before 
+           content: '|' 
+           color: #5ac8fb 
+           font-size: 1.7em
+           padding-right:  
+     .jonP2  
+          color: #999    
+          font-size: 0.7em
+     .fa.fa-youtube-play, .fa.fa-twitter, .fa.fa-facebook-square, .fa.fa-github  
+          color: #999       
+          padding-left: 5px
+
+     .fa.fa-location-arrow, .fa.fa-phone, .fa.fa-lock 
+          color: #999
+          padding-left: 5px
+          padding-bottom: 13px
+          display: block
+          .vig    
+            font-family: opensans
+            color: #999    
+            font-size: 0.7em
+            padding-left: 8px
+     img  
+        padding-left: 3px      
+        padding-bottom: 3px
+        padding-bottom: 5px
