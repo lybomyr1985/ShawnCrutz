@@ -185,6 +185,7 @@ hr
      display: flex 
      flex-direction: column
      margin: auto
+     justify-content: center
 .owl-stage
    display: flex   
    margin: 100px  
@@ -287,8 +288,13 @@ hr
    background-color: #5ac8fb 
    .i1, .i2, .i3, .i4, .i5, .i6, .i7, .i8, .i9, .i10
       display: flex 
-      flex-flow:  wrap
       justify-content: center
+      flex-flow: row nowrap
+      align-items: center
+      align-items: stretch
+
+   
+
       &:hover 
        opacity: 0.5
        transition: 3s easy
