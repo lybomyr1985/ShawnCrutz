@@ -291,22 +291,19 @@ hr
       justify-content: center
       flex-flow: row nowrap
       align-items: center
-      align-items: stretch
-
-   
-
+      flex-grow: 1
       &:hover 
        opacity: 0.5
        transition: 3s easy
-       
       img 
-        width: 289px
-        height: 195px 
+         width: 289px
+         height: 198px 
+         flex-grow: 1
         
       .fa.fa-angle-double-down
          color: #fff
          position: absolute 
-         margin-top: 72px
+         margin-top: -1px
          opacity: 0
          font-size: 1.7em
     
@@ -314,7 +311,7 @@ hr
       .spi1 
          color: #fff 
          position: absolute 
-         margin-top: 102px
+         margin-top: 28px
          opacity: 0
          font-family: opensans
          transition: 3s easy
